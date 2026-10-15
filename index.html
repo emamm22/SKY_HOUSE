@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sky House | التشطيبات الداخلية والتصميم الداخلي</title>
+<meta name="description" content="Sky House للتشطيبات الداخلية والتصميم الداخلي في مصر. تشطيب متكامل، تصميم ثلاثي الأبعاد، ومتابعة دقيقة لمراحل التنفيذ>
+
+<link rel="canonical" href="https://PUT-YOUR-DOMAIN-HERE/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sky House">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://PUT-YOUR-DOMAIN-HERE/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap">
+<link rel="icon" href="logo.jpg">
+
+
+<style>
+:root{--bg:#0e1116;--bg2:#151a22;--ivory:#f5f0e8;--stone:#b9b1a4;--gold:#b8996a;--line:#ffffff1f;--pt:env(safe-area-inset-top,0px);--pb:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Cairo,Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ivory);line-height:1.8;overflow-x:hidden;padding-top:var(--pt)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,90%);margin-inline:auto}
+section{padding:clamp(64px,10vw,120px) 0}
+.eyebrow{color:var(--gold);letter-spacing:.18em;font-size:.8rem;text-transform:uppercase}
+h1,h2,h3{font-weight:300;line-height:1.3}
+h2{font-size:clamp(1.8rem,4vw,2.9rem);margin:8px 0 18px}
+.lead{color:var(--stone);max-width:560px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 30px;border:1px solid var(--gold);color:var(--ivory);background:transparent;font:600 .95rem Cairo,sans-serif;cursor:pointer;transition:.3s}
+.btn.solid{background:var(--gold);color:#14110c}
+.btn:hover,.btn:focus-visible{background:var(--ivory);color:var(--bg);border-color:var(--ivory)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* header */
+header{position:fixed;inset-inline:0;top:0;z-index:50;padding-top:var(--pt);transition:.4s}
+header.solid{background:#0e1116ec;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:18px}
+.brand{font-weight:700;letter-spacing:.25em;font-size:1.05rem;display:flex;align-items:center;gap:10px}
+.brand img{height:38px;width:auto}.brand b{color:var(--gold);font-weight:700}
+.menu{display:flex;gap:26px;align-items:center;font-size:.92rem}
+.menu a:not(.btn){color:var(--stone);transition:.3s}.menu a:not(.btn):hover{color:var(--ivory)}
+.menu .btn{min-height:40px;padding:0 20px}
+.lang{display:flex;gap:6px;font-size:.85rem;direction:ltr}
+.lang button{background:none;border:0;color:var(--stone);cursor:pointer;font:inherit;padding:6px 4px}
+.lang button[aria-pressed=true]{color:var(--gold);border-bottom:1px solid var(--gold)}
+.burger{display:none;background:none;border:1px solid var(--line);width:46px;height:46px;color:var(--ivory);cursor:pointer;font-size:1.2rem}
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:flex-end;position:relative;padding:130px 0 70px;background:radial-gradient(900px 500px at 80% 20%,#b8996a22,transparent 60%),linear-gradient(160deg,#151a22,#0e1116 70%);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 119px,#ffffff08 119px 120px);pointer-events:none}
+.hero-img{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s}
+.hero-img.on{opacity:1}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#0e1116f2 5%,#0e111670 60%,#0e111633)}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.2rem,6.4vw,4.8rem);max-width:15ch;margin:14px 0 20px}
+.hero .lead{font-size:1.1rem;margin-bottom:34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+.hero .rv{animation:up 1s .15s both}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+/* portfolio */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 34px}
+.filters button{background:none;border:1px solid var(--line);color:var(--stone);padding:6px 18px;cursor:pointer;font:inherit;font-size:.88rem;min-height:40px;transition:.3s}
+.filters button[aria-pressed=true]{border-color:var(--gold);color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.card{position:relative;grid-column:span 4;aspect-ratio:4/5;overflow:hidden;cursor:zoom-in;background:var(--bg2);border:0;padding:0;color:inherit;text-align:start}
+.card:nth-child(5n+1){grid-column:span 7;aspect-ratio:16/11}
+.card:nth-child(5n+2){grid-column:span 5;aspect-ratio:auto}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s}
+.card:hover img{transform:scale(1.05)}
+.card figcaption,.card .cap{position:absolute;inset-inline:0;bottom:0;padding:50px 20px 18px;background:linear-gradient(transparent,#0e1116ee);transition:.4s}
+.cap small{color:var(--gold);display:block;font-size:.78rem}.cap b{font-weight:600;display:block}.cap span{color:var(--stone);font-size:.86rem;display:block}
+.card[hidden]{display:none}.slot{cursor:default;min-height:260px;border:1px dashed #ffffff33;background:linear-gradient(135deg,#151a22,#0e1116)}.slot .cap{inset:0;background:none;display:flex;flex-direction:column;justify-content:flex-end}
+.pk{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:36px 0 18px}.pkg{border:1px solid var(--line);padding:32px 26px;display:flex;flex-direction:column;gap:10px}.pkg.f{border-color:var(--gold);background:#b8996a0f}.pkg small{color:var(--gold)}.pkg h3{font-size:1.5rem}.pkg .pr{font-size:1.25rem;font-weight:600}.pkg ul{padding-inline-start:18px;color:var(--stone);flex:1;margin-bottom:12px}.note{color:var(--stone);font-size:.88rem}.empty{grid-column:1/-1;border:1px solid var(--line);padding:70px 20px;text-align:center;color:var(--stone);letter-spacing:.05em}
+dialog{border:0;background:#080a0ef2;color:var(--ivory);width:100%;height:100%;max-width:none;max-height:none;padding:4vw}
+dialog::backdrop{background:#000}
+dialog img{max-height:78vh;margin:auto;object-fit:contain}
+dialog p{text-align:center;margin-top:14px;color:var(--stone)}
+dialog button{position:absolute;top:calc(14px + var(--pt));inset-inline-end:16px;background:none;border:1px solid var(--line);color:var(--ivory);width:46px;height:46px;font-size:1.3rem;cursor:pointer}
+/* services */
+.svc{margin-top:36px;border-top:1px solid var(--line)}
+.svc div{display:grid;grid-template-columns:70px 1fr 1.3fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:.4s}
+.svc div:hover{padding-inline-start:14px}
+.svc i{font-style:normal;color:var(--gold);font-size:.9rem;letter-spacing:.1em}
+.svc h3{font-size:1.35rem}.svc p{color:var(--stone)}
+/* journey */
+.alt{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;counter-reset:s}
+.step{padding:28px 24px;border:1px solid var(--line);margin:0 -1px -1px 0}
+.step i{font-style:normal;font-size:2.6rem;font-weight:300;color:var(--gold);display:block;line-height:1.2}
+.step p{color:var(--stone);margin-top:6px}
+/* about / quote */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.two p+p{margin-top:14px}.two p{color:var(--stone)}
+.vals{border-inline-start:1px solid var(--gold);padding-inline-start:30px}
+.vals li{list-style:none;padding:10px 0;font-size:1.15rem;border-bottom:1px solid var(--line)}
+.quote{text-align:center}.quote .lead{margin:0 auto 28px}
+/* contact */
+form{display:grid;gap:14px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:.85rem;color:var(--stone);display:block}
+input,select{width:100%;min-height:50px;background:transparent;border:1px solid var(--line);color:var(--ivory);padding:0 14px;font:inherit;margin-top:4px;border-radius:0}
+select option{background:var(--bg);color:var(--ivory)}
+input:focus,select:focus{border-color:var(--gold);outline:none}
+input[aria-invalid=true]{border-color:#e08a7a}
+.err{color:#e8a090;font-size:.8rem;min-height:1.2em;display:block}
+#status{min-height:1.6em;font-size:.92rem}
+.ok{color:#9fd3a8}.bad{color:#e8a090}
+.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+footer{border-top:1px solid var(--line);padding:34px 0 calc(34px + var(--pb));color:var(--stone);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fab{position:fixed;inset-inline-start:16px;bottom:calc(16px + var(--pb));z-index:40;display:none}
+#toast{position:fixed;inset-inline:16px;bottom:calc(20px + var(--pb));z-index:99;background:var(--ivory);color:var(--bg);padding:14px 18px;max-width:420px;margin-inline:auto;transform:translateY(160%);transition:.4s;text-align:center}
+#toast.show{transform:none}
+[hidden]{display:none!important}
+@media(max-width:860px){
+.burger{display:block}
+.menu{position:fixed;inset:0;background:var(--bg);flex-direction:column;justify-content:center;font-size:1.4rem;gap:26px;transform:translateX(100%);transition:.45s;visibility:hidden}
+[dir=rtl] .menu{transform:translateX(-100%)}
+.menu.open{transform:none;visibility:visible}
+.burger{position:relative;z-index:60}
+.svc div{grid-template-columns:44px 1fr}.svc p{grid-column:2}
+.steps{grid-template-columns:1fr 1fr}.two,.row,.pk{grid-template-columns:1fr}
+.card,.card:nth-child(5n+1),.card:nth-child(5n+2){grid-column:span 12;aspect-ratio:4/3}
+.fab{display:inline-flex}
+}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a class="brand" href="#home" aria-label="Sky House"><img id="logo" src="assets/images/logo.png" alt="Sky House" hidden><span id="wm">SKY <b>HOUSE</b></span></a>
+<nav class="menu" id="menu" aria-label="Main">
+<a href="#home" data-i18n="n_home"></a><a href="#services" data-i18n="n_services"></a><a href="#work" id="nwork" data-i18n="n_work"></a><a href="#journey" data-i18n="n_journey"></a><a href="#about" data-i18n="n_about"></a><a href="#contact" data-i18n="n_contact"></a>
+<a class="btn" href="#contact" data-i18n="n_cta"></a>
+<div class="lang" role="group" aria-label="Language"><button data-l="ar" aria-pressed="true">AR</button><span>|</span><button data-l="en" aria-pressed="false">EN</button></div>
+</nav>
+<button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="hero-img" id="heroimg"></div><div class="wrap">
+<p class="eyebrow rv" data-i18n="h_eye"></p>
+<h1 class="rv" data-i18n="h_h1"></h1>
+<p class="lead rv" data-i18n="h_p"></p>
+<div class="cta rv"><a class="btn solid" href="#contact" data-i18n="h_c1"></a><a class="btn" href="#work" id="hwork" data-i18n="h_c2"></a></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<p class="eyebrow" data-i18n="w_eye"></p><h2 data-i18n="w_h"></h2><p class="lead" data-i18n="w_p"></p>
+<div class="filters" id="filters" role="group"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<p class="eyebrow rv" data-i18n="s_eye"></p><h2 class="rv" data-i18n="s_h"></h2><p class="lead rv" data-i18n="s_p"></p>
+<div class="svc" id="svc"></div>
+</div></section>
+
+<section id="journey" class="alt"><div class="wrap">
+<p class="eyebrow rv" data-i18n="j_eye"></p><h2 class="rv" data-i18n="j_h"></h2>
+<div class="steps" id="steps"></div>
+</div></section>
+
+<section id="about"><div class="wrap two">
+<div class="rv"><p class="eyebrow" data-i18n="a_eye"></p><h2 data-i18n="a_h"></h2><p data-i18n="a_p1"></p><p data-i18n="a_p2"></p></div>
+<ul class="vals rv"><li data-i18n="a_v1"></li><li data-i18n="a_v2"></li><li data-i18n="a_v3"></li><li data-i18n="a_v4"></li></ul>
+</div></section>
+
+<section id="packages"><div class="wrap">
+<p class="eyebrow rv" data-i18n="p_eye"></p><h2 class="rv" data-i18n="p_h"></h2><p class="lead rv" data-i18n="p_p"></p>
+<div class="pk" id="pk"></div><p class="note" data-i18n="p_note"></p>
+</div></section>
+
+<section class="alt quote"><div class="wrap rv">
+<p class="eyebrow" data-i18n="q_eye"></p><h2 data-i18n="q_h"></h2><p class="lead" data-i18n="q_p"></p>
+<a class="btn solid" href="#contact" data-i18n="q_c"></a>
+</div></section>
+
+<section id="contact"><div class="wrap two" style="align-items:start">
+<div class="rv"><p class="eyebrow" data-i18n="c_eye"></p><h2 data-i18n="c_h"></h2><p class="lead" data-i18n="c_p"></p>
+<div class="links"><button class="btn solid wa" type="button" data-i18n="c_wa"></button><a class="btn" id="fb" target="_blank" rel="noopener" data-i18n="c_fb" hidden></a></div></div>
+<form id="f" novalidate class="rv">
+<div class="row"><div><label for="fn" data-i18n="f_name"></label><input id="fn" name="name" autocomplete="name" required><span class="err"></span></div>
+<div><label for="fp" data-i18n="f_phone"></label><input id="fp" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err"></span></div></div>
+<div class="row"><div><label for="fl" data-i18n="f_loc"></label><input id="fl" name="loc" required><span class="err"></span></div>
+<div><label for="fa" data-i18n="f_area"></label><input id="fa" name="area" inputmode="numeric"><span class="err"></span></div></div>
+<div><label for="ft" data-i18n="f_type"></label><select id="ft" name="type"></select></div>
+<button class="btn solid" type="submit" data-i18n="f_send"></button>
+<p id="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>SKY HOUSE — <span data-i18n="ft_tag"></span></span><span>©️ <span id="yr"></span> <span data-i18n="ft_rights"></span></span></div></footer>
+<button class="btn solid wa fab" type="button" data-i18n="c_wa"></button>
+<div id="toast" role="alert"></div>
+<dialog id="lb" aria-label="Image viewer"><button id="lbx" aria-label="Close">×</button><img id="lbi" alt=""><p id="lbc"></p></dialog>
+
+<script>
+/* =====================================================
+   1) CONFIG — EDIT THESE (contact details)
+   WHATSAPP_NUMBER: international format, digits only (e.g. 2010XXXXXXXX)
+   ===================================================== */
+const WHATSAPP_NUMBER = "201001304736";
+const FACEBOOK_PAGE_URL = "PUT_FACEBOOK_PAGE_URL_HERE";
+const LOGO_PATH = "assets/images/logo.png";        // REPLACE THE LOGO FILE HERE
+const HERO_IMAGE = "assets/images/hero.jpg";       // REPLACE THE HERO PHOTO HERE
+
+/* =====================================================
+   2) PROJECTS — ADD A NEW PROJECT HERE
+   Put the photo in assets/images/ then add an object.
+   category: apartments | kitchens | bathrooms | reception | bedrooms | decor
+   Items whose image fails to load are hidden automatically.
+   Example (copy, remove the comment marks):
+   { image:"assets/images/kitchen-01.jpg",          // REPLACE THIS IMAGE PATH
+     category:"kitchens",
+     title:{ar:"مطبخ عصري", en:"Modern Kitchen"},    // EDIT THE PROJECT TITLE HERE
+     desc:{ar:"وصف قصير", en:"Short description"},
+     alt:{ar:"وصف الصورة", en:"Image description"} },
+   ===================================================== */
+const PROJECTS = [
+  // Each item is a photo SLOT. It shows as an empty frame until the image file exists,
+  // then shows the photo automatically. To fill a slot: upload the photo with the
+  // exact file name below (REPLACE THIS IMAGE PATH). Edit titles/descriptions here.
+  { image:"PHOTO-2026-10-15-21-29-22.jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-29-59.jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-29-22(1).jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-30-01.jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-24-04(3).jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-23-58.jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-24-02.jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-24-04(1).jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-24-03.jpg", category:"reception", title:{ar:"ريسبشن",en:"Reception"}, desc:{ar:"أسقف وإضاءة ودهانات",en:"Ceilings, lighting and paint"}, alt:{ar:"تشطيب ريسبشن من تنفيذ Sky House",en:"Reception finishing by Sky House"} },
+  
+  
+  
+  { image:"PHOTO-2026-10-15-21-26-45.jpg", category:"kitchens", title:{ar:"مطبخ",en:"Kitchen"}, desc:{ar:"خامات وتشطيبات عصرية",en:"Modern materials and finishes"}, alt:{ar:"تنفيذ مطبخ من Sky House",en:"Kitchen by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-24-40.jpg", category:"kitchens", title:{ar:"مطبخ",en:"Kitchen"}, desc:{ar:"خامات وتشطيبات عصرية",en:"Modern materials and finishes"}, alt:{ar:"تنفيذ مطبخ من Sky House",en:"Kitchen by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-27-47.jpg", category:"kitchens", title:{ar:"مطبخ",en:"Kitchen"}, desc:{ar:"خامات وتشطيبات عصرية",en:"Modern materials and finishes"}, alt:{ar:"تنفيذ مطبخ من Sky House",en:"Kitchen by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-27-37.jpg", category:"kitchens", title:{ar:"مطبخ",en:"Kitchen"}, desc:{ar:"خامات وتشطيبات عصرية",en:"Modern materials and finishes"}, alt:{ar:"تنفيذ مطبخ من Sky House",en:"Kitchen by Sky House"} },
+  
+
+
+
+
+  { image:"PHOTO-2026-10-15-21-23-58(1).jpg", category:"bathrooms", title:{ar:"حمام",en:"Bathroom"}, desc:{ar:"سيراميك وأطقم صحية",en:"Ceramics and fixtures"}, alt:{ar:"تشطيب حمام من Sky House",en:"Bathroom finishing by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-23-58(2).jpg", category:"bathrooms", title:{ar:"حمام",en:"Bathroom"}, desc:{ar:"سيراميك وأطقم صحية",en:"Ceramics and fixtures"}, alt:{ar:"تشطيب حمام من Sky House",en:"Bathroom finishing by Sky House"} }, 
+  { image:"IMG-20260725-WA0004.jpg", category:"bedrooms", title:{ar:"غرفة نوم",en:"Bedroom"}, desc:{ar:"دهانات وإضاءة وديكور",en:"Paint, lighting and décor"}, alt:{ar:"غرفة نوم من تنفيذ Sky House",en:"Bedroom by Sky House"} },
+  { image:"PHOTO-2026-10-15-21-24-04(1).jpg", category:"decor", title:{ar:"جبس بورد وإضاءة",en:"Gypsum & Lighting"}, desc:{ar:"تفاصيل تنفيذ دقيقة",en:"Precisely executed details"}, alt:{ar:"أسقف جبس بورد وإضاءة من Sky House",en:"Gypsum ceilings and lighting by Sky House"} },
+ 
+];
+
+/* =====================================================
+   3) TRANSLATIONS — EDIT ALL TEXT HERE (ar / en)
+   ===================================================== */
+const T = {
+ar:{
+ meta_t:"Sky House | التشطيبات الداخلية والتصميم الداخلي", meta_d:"Sky House للتشطيبات الداخلية والتصميم الداخلي في مصر. تشطيب متكامل، تصميم ثلاثي الأبعاد، ومتابعة دقيقة لمراحل التنفيذ.",
+ n_home:"الرئيسية",n_services:"خدماتنا",n_work:"أعمالنا",n_journey:"مراحل التنفيذ",n_about:"من نحن",n_contact:"تواصل معنا",n_cta:"اطلب معاينة",
+ h_eye:"SKY HOUSE — تشطيبات وتصميم داخلي",h_h1:"نصنع من المساحات حكاية تستحق أن تُعاش",h_p:"تشطيب وتصميم داخلي بعناية فائقة بالتفاصيل، من الفكرة الأولى حتى تسليم المفتاح.",h_c1:"ابدأ مشروعك",h_c2:"اكتشف أعمالنا",
+ w_eye:"المعرض",w_h:"أعمال من تنفيذنا",w_p:"مشاريع حقيقية نفخر بها. اضغط على أي صورة لعرضها بالحجم الكامل.",w_empty:"سيتم عرض أعمالنا السابقة هنا قريبًا.",
+ cat_all:"الكل",cat_apartments:"شقق سكنية",cat_kitchens:"مطابخ",cat_bathrooms:"حمامات",cat_reception:"ريسبشن",cat_bedrooms:"غرف نوم",cat_decor:"ديكورات",
+ s_eye:"خدماتنا",s_h:"كل ما يحتاجه بيتك في مكان واحد",s_p:"نغطي مراحل المشروع من التصميم إلى التسليم.",
+ svc:[["التشطيب الداخلي المتكامل","محارة وأرضيات ودهانات وتسليم نهائي بإشراف واضح."],["التصميم الداخلي والديكور","تنسيق الألوان والخامات والإضاءة بما يعكس شخصيتك."],["التصميم ثلاثي الأبعاد","تصوّر واضح للمساحة قبل بدء التنفيذ."],["الكهرباء والسباكة والتأسيس","أعمال تأسيس دقيقة تضمن أساسًا سليمًا للتشطيب."],["المطابخ والحمامات","تجهيز وتنفيذ مع اهتمام بالعزل والتفاصيل."],["الجبس بورد والإضاءة","أسقف وتوزيع إضاءة مناسب لكل مساحة."],["الإشراف ومتابعة التنفيذ","تنسيق ومتابعة الأعمال ومراحل الشغل."],["المقايسات وتحديد المواصفات","حصر البنود وتوضيح الخامات والتكلفة قبل البدء."]],
+ j_eye:"رحلة المشروع",j_h:"من أول تواصل حتى الاستلام",
+ jr:[["التواصل وفهم الاحتياجات","نستمع لتفاصيل مشروعك وأسلوبك."],["معاينة الموقع وحصر المساحات","زيارة الموقع وتحديد البنود."],["التصميم والمقايسة والمواصفات","مواصفات وتكلفة واضحة ومكتوبة."],["الاتفاق والجدول الزمني","نتفق على نطاق العمل ومواعيده."],["التنفيذ ومتابعة المراحل","متابعة الأعمال خطوة بخطوة."],["المراجعة والاستلام","مراجعة التفاصيل ثم التسليم."]],
+ a_eye:"من نحن",a_h:"التفاصيل هي ما يصنع الفرق",a_p1:"في Sky House هدفنا أن تفهم كل مرحلة من مراحل تشطيب بيتك، من اختيار الخامات حتى الاستلام.",a_p2:"نوضّح البنود والتكلفة المتفق عليها، ونتابع التنفيذ باهتمام بالتفاصيل. نطاق التصميم والمتابعة والضمان يُحدد وفق الاتفاق المكتوب لكل مشروع.",
+ a_v1:"وضوح في البنود والتكلفة",a_v2:"اهتمام بالتفاصيل",a_v3:"متابعة مراحل التنفيذ",a_v4:"التزام بما يُتفق عليه كتابيًا",
+ q_eye:"عرض سعر",q_h:"تكلفة مشروعك تُحدد بعد المعاينة",q_p:"تختلف التكلفة حسب المساحة والموقع والخامات والبنود. اطلب عرض سعر مكتوب بمواصفات واضحة.",q_c:"اطلب عرض سعر",
+ c_eye:"تواصل معنا",c_h:"ابدأ مشروعك معنا",c_p:"أرسل تفاصيل مشروعك وسنساعدك في تحديد الخطوة المناسبة.",c_wa:"راسلنا على واتساب",c_fb:"صفحتنا على فيسبوك",
+ f_name:"الاسم",f_phone:"رقم الهاتف",f_loc:"الموقع / المنطقة",f_area:"المساحة التقريبية (م²)",f_type:"نوع التشطيب",f_send:"أرسل عبر واتساب",
+ types:["تشطيب متكامل","تصميم داخلي وديكور","مطبخ / حمام","أخرى"],
+ v_req:"هذا الحقل مطلوب",v_phone:"أدخل رقم هاتف صحيحًا",v_ok:"جاري فتح واتساب لإرسال طلبك…",v_cfg:"رقم واتساب لم يُضبط بعد. يرجى المحاولة لاحقًا.",
+ wa_msg:"السلام عليكم، أود الاستفسار عن خدمات التشطيب من Sky House.",wa_n:"الاسم",wa_p:"الهاتف",wa_l:"الموقع",wa_a:"المساحة",wa_t:"نوع التشطيب",
+ p_eye:"الباقات",p_h:"باقات التشطيب",p_p:"اختر المستوى المناسب، ونحدد التكلفة النهائية بعد المعاينة والمقايسة.",p_note:"الأسعار استرشادية وقابلة للتغيير حسب المساحة ومكان المشروع والخامات والبنود المطلوبة. يتم اعتماد السعر النهائي في مقايسة مكتوبة.",p_btn:"اطلب التفاصيل",
+ pk:[["عملي","الباقة العادية","ابتداءً من 4,500 ج.م / م²",["خامات ومواصفات حسب المقايسة","تنفيذ بنود التشطيب المتفق عليها","متابعة مراحل التنفيذ"]],["اختيار متوازن","الباقة المتوسطة","ابتداءً من 5,500 ج.م / م²",["اختيارات خامات وتشطيبات أوسع","اهتمام بالتفاصيل والديكور","مقايسة واضحة قبل التعاقد"]],["مميز","الباقة الفاخرة","ابتداءً من 6,500 ج.م / م²",["مستوى أعلى من الخامات والتفاصيل","خيارات تصميم وإضاءة مميزة","تحديد المواصفات بالعقد"]]],
+ ft_tag:"التشطيبات والتصميم الداخلي",ft_rights:"جميع الحقوق محفوظة"},
+en:{
+ meta_t:"Sky House | Interior Finishing & Design in Egypt", meta_d:"Sky House — interior finishing and design in Egypt. Complete finishing, 3D design and careful supervision of every stage.",
+ n_home:"Home",n_services:"Services",n_work:"Projects",n_journey:"Process",n_about:"About",n_contact:"Contact",n_cta:"Book a Visit",
+ h_eye:"SKY HOUSE — FINISHING & INTERIOR DESIGN",h_h1:"We turn spaces into stories worth living",h_p:"Interior finishing and design with exceptional attention to detail, from the first idea to the day we hand over the keys.",h_c1:"Start Your Project",h_c2:"Explore Our Work",
+ w_eye:"Portfolio",w_h:"Selected Projects",w_p:"Real projects we are proud of. Click any image to view it full size.",w_empty:"Our previous work will be showcased here soon.",
+ cat_all:"All",cat_apartments:"Apartments",cat_kitchens:"Kitchens",cat_bathrooms:"Bathrooms",cat_reception:"Reception",cat_bedrooms:"Bedrooms",cat_decor:"Decor",
+ s_eye:"Services",s_h:"Everything your home needs, in one place",s_p:"We cover every stage, from design to handover.",
+ svc:[["Complete Interior Finishing","Plastering, flooring, painting and final handover under clear supervision."],["Interior Design & Décor","Colors, materials and lighting composed to reflect your character."],["3D Design","A clear visualization of the space before work begins."],["Electrical, Plumbing & Groundwork","Precise groundwork for a sound foundation."],["Kitchens & Bathrooms","Fitted out with care for waterproofing and detail."],["Gypsum Ceilings & Lighting","Ceilings and lighting layouts suited to each space."],["Supervision & Site Follow-up","Coordination and monitoring of every work stage."],["Quantities & Specifications","Itemized scope, materials and cost before we begin."]],
+ j_eye:"Project Journey",j_h:"From first contact to handover",
+ jr:[["Contact & Understanding Your Needs","We listen to your project and your taste."],["Site Visit & Measurements","We visit the site and define the scope."],["Design, Quotation & Specifications","Clear, written specifications and costs."],["Agreement & Schedule","We agree on the scope of work and timing."],["Execution & Stage Follow-up","Step-by-step supervision of the work."],["Review & Handover","A detailed review, then handover."]],
+ a_eye:"About",a_h:"Details make the difference",a_p1:"At Sky House, we want you to understand every stage of finishing your home, from choosing materials to handover.",a_p2:"We clarify the agreed items and costs and follow the work with close attention to detail. Design scope, follow-up and warranty are defined by the written agreement for each project.",
+ a_v1:"Clarity in scope and cost",a_v2:"Attention to detail",a_v3:"Stage-by-stage follow-up",a_v4:"Commitment to what is agreed in writing",
+ q_eye:"Quotation",q_h:"Your project cost is set after a site visit",q_p:"Cost depends on area, location, materials and scope. Request a written quotation with clear specifications.",q_c:"Request a Quotation",
+ c_eye:"Contact",c_h:"Start your project with us",c_p:"Send us your project details and we will help you take the right next step.",c_wa:"Message us on WhatsApp",c_fb:"Our Facebook Page",
+ f_name:"Name",f_phone:"Phone number",f_loc:"Location / Area",f_area:"Approximate area (m²)",f_type:"Type of finishing",f_send:"Send via WhatsApp",
+ types:["Complete finishing","Interior design & décor","Kitchen / Bathroom","Other"],
+ v_req:"This field is required",v_phone:"Enter a valid phone number",v_ok:"Opening WhatsApp to send your request…",v_cfg:"The WhatsApp number is not configured yet. Please try again later.",
+ wa_msg:"Hello, I would like to inquire about Sky House finishing services.",wa_n:"Name",wa_p:"Phone",wa_l:"Location",wa_a:"Area",wa_t:"Finishing type",
+ p_eye:"Packages",p_h:"Finishing Packages",p_p:"Choose the right level; the final cost is set after the site visit and quantity survey.",p_note:"Prices are indicative and may change with area, project location, materials and required scope. The final price is confirmed in a written quotation.",p_btn:"Request Details",
+ pk:[["Practical","Standard Package","From EGP 4,500 / m²",["Materials and specifications per the quotation","Execution of the agreed finishing items","Follow-up of work stages"]],["Balanced Choice","Mid-Range Package","From EGP 5,500 / m²",["Wider choice of materials and finishes","Attention to detail and décor","A clear quotation before contracting"]],["Premium","Luxury Package","From EGP 6,500 / m²",["Higher-grade materials and detailing","Distinctive design and lighting options","Specifications defined in the contract"]]],
+ ft_tag:"FINISHING & INTERIOR DESIGN",ft_rights:"All rights reserved"}
+};
+
+/* =====================================================
+   4) APP CODE (no need to edit below)
+   ===================================================== */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+let lang="ar", cat="all"; const live=[];
+try{lang=localStorage.getItem("sh_lang")||"ar"}catch(e){}
+if(!T[lang])lang="ar";
+const cfgOK=v=>v&&!v.startsWith("PUT_");
+
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("show"),3800)}
+function openWA(text){if(!cfgOK(WHATSAPP_NUMBER)){toast(T[lang].v_cfg);return false}window.open("https://wa.me/"+WHATSAPP_NUMBER.replace(/\D/g,"")+"?text="+encodeURIComponent(text),"_blank","noopener");return true}
+
+function render(){
+ const d=T[lang],h=document.documentElement;
+ h.lang=lang;h.dir=lang==="ar"?"rtl":"ltr";
+ document.title=d.meta_t;
+ $('meta[name=description]').content=d.meta_d;
+ $('meta[property="og:title"]').content=d.meta_t;$('meta[property="og:description"]').content=d.meta_d;
+ $$("[data-i18n]").forEach(e=>e.textContent=d[e.dataset.i18n]);
+ $("#svc").innerHTML=d.svc.map((s,i)=>`<div class="rv in"><i>${String(i+1).padStart(2,"0")}</i><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("");
+ $("#steps").innerHTML=d.jr.map((s,i)=>`<div class="step rv in"><i>${String(i+1).padStart(2,"0")}</i><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("");
+ $("#pk").innerHTML=d.pk.map((k,i)=>`<div class="pkg${i==1?" f":""}"><small>${k[0]}</small><h3>${k[1]}</h3><div class="pr">${k[2]}</div><ul>${k[3].map(x=>`<li>${x}</li>`).join("")}</ul><a class="btn" href="#contact">${d.p_btn}</a></div>`).join("");
+ const sel=$("#ft"),cur=sel.selectedIndex;sel.innerHTML=d.types.map(t=>`<option>${t}</option>`).join("");sel.selectedIndex=Math.max(cur,0);
+ $$(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===lang));
+ $$(".err").forEach(e=>e.textContent="");
+ drawWork();
+}
+function drawWork(){
+ const d=T[lang],cats=["all",...new Set(PROJECTS.map(p=>p.category))];
+ $("#filters").innerHTML=cats.map(c=>`<button type="button" data-c="${c}" aria-pressed="${c===cat}">${d["cat_"+c]||c}</button>`).join("");
+ $("#grid").innerHTML=PROJECTS.map((p,i)=>[p,i]).filter(([p])=>cat==="all"||p.category===cat).map(([p,i])=>p.ok
+  ?`<button type="button" class="card" data-i="${i}"><img src="${p.image}" alt="${p.alt[lang]}" loading="lazy"><span class="cap"><small>${d["cat_"+p.category]||""}</small><b>${p.title[lang]}</b><span>${p.desc[lang]}</span></span></button>`
+  :`<div class="card slot"><span class="cap"><small>${d["cat_"+p.category]||""}</small><b>${p.title[lang]}</b><span>${p.desc[lang]}</span></span></div>`).join("");
+}
+function loadWork(){PROJECTS.forEach(p=>{const i=new Image();i.onload=()=>{p.ok=true;drawWork()};i.src=p.image})}
+
+document.addEventListener("click",e=>{
+ const l=e.target.closest(".lang button");
+ if(l){lang=l.dataset.l;try{localStorage.setItem("sh_lang",lang)}catch(x){}render();return}
+ const f=e.target.closest("#filters button");if(f){cat=f.dataset.c;drawWork();return}
+ const c=e.target.closest(".card:not(.slot)");
+ if(c){const p=PROJECTS[c.dataset.i];$("#lbi").src=p.image;$("#lbi").alt=p.alt[lang];$("#lbc").textContent=p.title[lang]+" — "+p.desc[lang];$("#lb").showModal();return}
+ if(e.target.closest(".wa")){openWA(T[lang].wa_msg);return}
+ if(e.target.closest("#menu a"))closeMenu();
+});
+$("#lbx").onclick=()=>$("#lb").close();
+$("#lb").addEventListener("click",e=>{if(e.target.id==="lb")e.target.close()});
+const closeMenu=()=>{$("#menu").classList.remove("open");$("#burger").setAttribute("aria-expanded","false");$("#burger").textContent="☰"};
+$("#burger").onclick=()=>{const o=$("#menu").classList.toggle("open");$("#burger").setAttribute("aria-expanded",o);$("#burger").textContent=o?"✕":"☰"};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMenu()});
+addEventListener("scroll",()=>$("#hd").classList.toggle("solid",scrollY>40),{passive:true});
+
+$("#f").addEventListener("submit",e=>{
+ e.preventDefault();const d=T[lang],f=e.target;let ok=true;
+ [["fn",v=>v.trim().length>1,"v_req"],["fp",v=>/^[+\d][\d\s-]{6,}$/.test(v.trim()),"v_phone"],["fl",v=>v.trim().length>1,"v_req"]].forEach(([id,fn,k])=>{
+  const i=$("#"+id),good=fn(i.value);i.setAttribute("aria-invalid",!good);i.nextElementSibling.textContent=good?"":d[good?"":k];if(!good)ok=false});
+ const st=$("#status");
+ if(!ok){st.className="bad";st.textContent="";return}
+ const msg=`${d.wa_msg}\n${d.wa_n}: ${$("#fn").value}\n${d.wa_p}: ${$("#fp").value}\n${d.wa_l}: ${$("#fl").value}\n${d.wa_a}: ${$("#fa").value||"-"}\n${d.wa_t}: ${$("#ft").value}`;
+ if(openWA(msg)){st.className="ok";st.textContent=d.v_ok}else{st.className="bad";st.textContent=d.v_cfg}
+});
+
+if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});$$("section:not(.hero) .rv").forEach(el=>io.observe(el));$$("section:not(.hero) .rv").forEach(el=>el.classList.remove("in"))}else $$(".rv").forEach(el=>el.classList.add("in"));
+$("#yr").textContent=new Date().getFullYear();
+if(cfgOK(FACEBOOK_PAGE_URL)){$("#fb").href=FACEBOOK_PAGE_URL;$("#fb").hidden=false}
+const lg=new Image();lg.onload=()=>{$("#logo").src=LOGO_PATH;$("#logo").hidden=false;$("#wm").hidden=true};lg.src=LOGO_PATH;
+const hi=new Image();hi.onload=()=>{$("#heroimg").style.backgroundImage=`url(${HERO_IMAGE})`;$("#heroimg").classList.add("on")};hi.src=HERO_IMAGE;
+render();loadWork();
+</script>
+</body>
+</html>
